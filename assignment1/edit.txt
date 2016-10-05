@@ -1,0 +1,38 @@
+Q2:
+create table international as select distinct r.* from routes r, airports p1, airports p2 where r.Source_airport_ID = p1.Airport_ID and r.Destination_airport_ID = p2.Airport_ID and p1.Country != p2.Country;
+create table reciprocal as select distinct r1.* from routes r1, routes r2 where r1.Source_airport = r2.Destination_airport and r2.Source_airport = r1.Destination_airport and r1.Airline = r2.Airline;
+create table notreciprocal as select international.* from international except select reciprocal.* from reciprocal;
+create table q1 as select .* from airlines l, notreciprocal nr where nr.Airline_ID = l.Airline_ID and l.Callsign != '' and l.Active = 'Y';
+
+
+Q3:
+create table s1 as select distinct Airline_ID from (select r.* from routes r, airports p where r.Source_airport_ID = p.Airport_ID and p.Country = 'Canada' union select r.* from routes r, airports p where r.Destination_airport_ID = p.Airport_ID and p.Country = 'Canada');
+select Country, count(*) from s1 r, airlines l where r.Airline_ID = l.Airline_ID group by Country order by count(*) desc limit 10;
+
+Q4:create table length as select 6371*sqrt(((p1.Latitude-p2.Latitude)*3.14/180)*((p1.Latitude-p2.Latitude)*3.14/180) + ((cos((p1.Latitude+p2.Latitude)/2*3.14/180)*((p1.Longitude-p2.Longitude)*3.14/180))*(cos((p1.Latitude+p2.Latitude)/2*3.14/180)*((p1.Longitude-p2.Longitude)*3.14/180)))) as distance from airports p1, airports p2, routes r where r.Source_airport_ID = p1.Airport_ID and r.Destination_airport_ID = p2.Airport_ID order by distance desc limit 10;
+
+
+Q5:create table capable as select 6371*sqrt(((p1.Latitude-p2.Latitude)*3.14/180)*((p1.Latitude-p2.Latitude)*3.14/180) + ((cos((p1.Latitude+p2.Latitude)/2)*((p1.Longitude-p2.Longitude)*3.14/180))*(cos((p1.Latitude+p2.Latitude)/2)*((p1.Longitude-p2.Longitude)*3.14/180)))) as distance, r.Equipments from airports p1, airports p2, routes r where r.Source_airport_ID = p1.Airport_ID and r.Destination_airport_ID = p2.Airport_ID and distance >= 10000;
+
+
+Q6: 
+create table A1 as select distinct r.* from airports p, routes r where Source_airport = 'YEG' and Source_airport_ID = Airport_ID and r.Stops <= 3 group by r.Destination_airport;
+create table A2 as select distinct r.* from routes r, A1 where A1.Destination_airport = r.Source_airport and A1.Stops+r.Stops+1<=3 group by r.Destination_airport;
+create table A3 as select distinct r.* from routes r, A2, A1 where A2.Destination_airport = r.Source_airport and A1.Stops+A2.Stops+r.Stops<=3 group by r.Destination_airport;
+create table A4 as select distinct r.* from routes r, A3 where A3.Destination_airport = r.Source_airport and r.Stops = 0 group by r.Destination_airport;
+
+
+Q7:create table reachable as select p.* from routes r, airports p where r.Source_airport = 'YEG' and r.Destination_airport_ID = p.Airport_ID;
+insert into reachable select distinct p.* from routes r, reachable reach, airports p where reach.Airport_ID = r.Source_airport_ID and r.Destination_airport_ID = p.Airport_ID;
+select count(distinct Airport_ID) from reachable;
+select distinct * from reachable order by Altitude desc limit 1;
+
+
+Q8: create table a as select distinct r.* from routes r, airlines l where r.Airline_ID = l.Airline_ID and l.Callsign != '';
+create table aa as select distinct p.* from airports p, a where a.Source_airport_ID = p.Airport_ID union select distinct p.* from airports p, a where a.Destination_airport_ID = p.Airport_ID except select * from reachable;
+
+git remote -v 
+git push ... master
+git brunch lab4 
+git check out lab4
+git push lab3 lab4

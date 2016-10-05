@@ -1,0 +1,9 @@
+// Is the database normalized?
+
+Answers:
+
+I think the database is not normalized for several reasons, for example,
+1. table "routes" does not have primary key;
+2. in each table, there are some redundant data, ie. has duplicate data for one item,
+	which can be separate into smaller table for example "country", "city";
+3. has some inappropriate data for example "Airline_ID" in table "routes" can be '\N';
