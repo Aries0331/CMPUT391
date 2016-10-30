@@ -1,0 +1,367 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"rect"
+			],
+			[
+				"prin",
+				"printf\tprintf …"
+			],
+			[
+				"obj",
+				"objectdist"
+			],
+			[
+				"min",
+				"minX"
+			],
+			[
+				"node",
+				"node_index"
+			],
+			[
+				"br",
+				"branchlist"
+			],
+			[
+				"nod",
+				"node_index"
+			],
+			[
+				"tes",
+				"testNode1"
+			],
+			[
+				"num",
+				"numChildren"
+			],
+			[
+				"up",
+				"UpwardPuring"
+			],
+			[
+				"dow",
+				"DownwardPuring"
+			],
+			[
+				"brach",
+				"branchList"
+			],
+			[
+				"minmaxdi",
+				"minmaxdist"
+			],
+			[
+				"ban",
+				"branchList"
+			],
+			[
+				"pri",
+				"printf\tprintf …"
+			],
+			[
+				"minm",
+				"minmaxdist"
+			],
+			[
+				"p",
+				"printf\tprintf …"
+			],
+			[
+				"sq",
+				"square"
+			],
+			[
+				"Point",
+				"Point"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"max",
+				"maxY"
+			],
+			[
+				"ma",
+				"maxY"
+			],
+			[
+				"Near",
+				"NearestN"
+			],
+			[
+				"branch",
+				"branchList"
+			],
+			[
+				"objetc",
+				"objectDIST"
+			],
+			[
+				"prun",
+				"pruneBranchList"
+			],
+			[
+				"nea",
+				"NearestNeighborSearch"
+			],
+			[
+				"bran",
+				"branchList"
+			],
+			[
+				"Airlin",
+				"AIRLINES"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"material theme:activate",
+				"Material Theme: Activate theme"
+			],
+			[
+				"install pcakage",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Install Package Control"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 145.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Aries/Desktop/c391_assignment2/q7.c",
+		"/Users/Aries/Desktop/ctest.c",
+		"/Users/Aries/Desktop/c391/assignment2/q5.c",
+		"/Users/Aries/Desktop/c391/assignment2/q1.sql",
+		"/Users/Aries/Desktop/c391/assignment2/q0.py",
+		"/Users/Aries/Desktop/c391/assignment2/q4.c",
+		"/Users/Aries/Desktop/c391/assignment2/test7.c",
+		"/Users/Aries/Desktop/c391/assignment2/q7.c",
+		"/Users/Aries/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/Aries/Desktop/c391_assignment2/q4.c",
+		"/Users/Aries/Desktop/c391_assignment2/q0.py",
+		"/Users/Aries/Desktop/c391_assignment2/q5.c",
+		"/Users/Aries/Desktop/c391_assignment2/q1.txt",
+		"/Users/Aries/Desktop/c391_assignment2/q1.sql",
+		"/Users/Aries/Desktop/cmput391/assignment2/q0.sql",
+		"/Users/Aries/Desktop/c391_assignment2/q5.sql",
+		"/Users/Aries/Desktop/lonelyTwitter/app/src/main/java/ca/ualberta/cs/lonelytwitter/LonelyTwitterActivity.java",
+		"/Users/Aries/Desktop/Record.java",
+		"/Users/Aries/Desktop/NormalRecord.java",
+		"/Users/Aries/Desktop/HabitTrackerActivity.java",
+		"/Users/Aries/Desktop/cmput391/q0.sql",
+		"/Users/Aries/Desktop/cmput391/readme.txt",
+		"/Users/Aries/Desktop/cmput391/q1.txt",
+		"/Users/Aries/Desktop/cmput391/edit.txt",
+		"/Users/Aries/Desktop/cmput391/cs391f16a1_JINZHU_LI/q5.c",
+		"/Users/Aries/Desktop/cmput391/q5.c",
+		"/Users/Aries/Google Drive/ualberta/CMPUT 201/Assignment1b/draw1b.c",
+		"/Users/Aries/Desktop/cmput391/extension-functions.c",
+		"/Users/Aries/Desktop/cmput391/Makefile",
+		"/Users/Aries/Desktop/cmput391/q8.c",
+		"/Users/Aries/Desktop/cmput391/q7.c",
+		"/Users/Aries/Desktop/cmput391/q9.c",
+		"/Users/Aries/Desktop/cmput391/q6.c",
+		"/Users/Aries/Desktop/cmput391/q4.c",
+		"/Users/Aries/Desktop/cmput391/q3.c",
+		"/Users/Aries/Desktop/cmput391/q2.c",
+		"/Users/Aries/Desktop/cmput391/q0.txt",
+		"/Users/Aries/Desktop/sqlite/update.c",
+		"/Users/Aries/Desktop/sqlite/select.c",
+		"/Users/Aries/Downloads/extension-functions.c",
+		"/Users/Aries/Desktop/sqlite/q3.c",
+		"/Users/Aries/Desktop/sqlite/q4.c",
+		"/Users/Aries/Desktop/sqlite/q0.sql",
+		"/Users/Aries/Desktop/sqlite/q2.c",
+		"/Users/Aries/Desktop/sqlite/q0",
+		"/Users/Aries/Desktop/sqlite/q2",
+		"/Users/Aries/Desktop/sqlite/sqlite3.c",
+		"/Users/Aries/Desktop/sqlite/sqlite3.h",
+		"/Users/Aries/Desktop/366w1.py",
+		"/Users/Aries/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Aries/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/Aries/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/Aries/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/Aries/Desktop/git/FillerCreepForAndroid/gradlew.bat"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"prune",
+			"result",
+			"mindist",
+			"node",
+			"Node",
+			"branchList",
+			"result",
+			"branchList",
+			"poi",
+			"{",
+			"struct",
+			"pi",
+			"stmt2",
+			"YEG",
+			"  notreciprocal",
+			"  ",
+			"stmt"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "q0.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
