@@ -1,0 +1,30 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dbr:	<http://dbpedia.org/resource/>.
+@prefix schema:	<http://schema.org/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix yago:	<http://dbpedia.org/class/yago/>.
+@prefix wikidata:	<http://www.wikidata.org/entity/>.
+@prefix umbel-rc:	<http://umbel.org/umbel/rc/> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+
+
+dbr:Calgary	rdf:type wikidata:Q515 ,schema:City,schema:Place,
+	dbo:Place.
+dbr:Calgary rdf:type wikidata:Q486972  ,dbo:City,  dbo:PopulatedPlace,dbo:Location.
+dbr:Calgary rdf:type umbel-rc:City
+		,umbel-rc:PopulatedPlace,  yago:AdministrativeDistrict108491826  ;
+		dbo:wikiPageExternalLink <http://www.calgary.ca>, <https://books.google.ca/books?id=1r-krRZlq9oC&lpg=PA1&dq=Calgary&pg=PA1#v=onepage&q&f=true>  ,
+		<https://books.google.ca/books?id=4Foo2g5a0LIC&lpg=PP1&dq=Calgary&pg=PP1#v=onepage&q&f=true>,<https://books.google.ca/books?id=IkkKn5wT8akC&lpg=PA1&dq=Calgary&pg=PA1#v=onepage&q&f=true>, 
+		<http://climate.weatheroffice.gc.ca/climate_normals/index_e.html> . 
+
+dbr:Calgary rdf:type umbel-rc:Location_Underspecified,umbel-rc:Village,yago:Area108497294.
+
+@prefix dbpedia-cs:	<http://cs.dbpedia.org/resource/> .
+
+dbr:Calgary owl:sameAs dbpedia-cs:Calgary.
+dbr:Calgary dbo:wikiPageID	15895358.
+@prefix dbp:	<http://dbpedia.org/property/> .
+dbr:Calgary dbp:areaCode 403587; dbp:areaMetroKm ; 
+	dbp:areaMetroKm 5107.550000;dbp:areaTotalKm 825.290000.
+dbr:Calgary	dbp:establishedDate "1884-11-07"^^xsd:date, "1894-01-01"^^xsd:date;
+ dbp:leaderName	dbr:Naheed_Nenshi.

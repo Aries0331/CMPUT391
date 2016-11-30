@@ -1,31 +1,15 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX dbc: <http://dbpedia.org/resource/Category:>
-PREFIX dbp: <http://dbpedia.org/property/>
-PREFIX dbr: <http://dbpedia.org/resource/>
-PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX db: <http://dbpedia.org/>
-SELECT ?team ?stadium WHERE {
-  ?team rdf:type dbo:SoccerClub.
-   ?team dct:subject dbc:Football_clubs_in_Italy.
-  ?stadium rdf:type dbo:Stadium.
-   ?team dbp:ground ?stadium .
-} 
-
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX dbc: <http://dbpedia.org/resource/Category:>
-PREFIX dbp: <http://dbpedia.org/property/>
-PREFIX dbr: <http://dbpedia.org/resource/>
 PREFIX dbo: <http://dbpedia.org/ontology/>
-PREFIX db: <http://dbpedia.org/>
+PREFIX dbr: <http://dbpedia.org/resource/>
+PREFIX dbc: <http://dbpedia.org/resource/Category:>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dct: <http://purl.org/dc/terms/>
 SELECT ?team ?stadium ?capacity WHERE {
-  ?team rdf:type dbo:SoccerClub.
-   ?team dct:subject dbc:Football_clubs_in_Italy.
-  ?stadium rdf:type dbo:Stadium.
-   ?team dbp:ground ?stadium .
-  OPTIONAL
-  {?team dbp:capacity ?capacity.}
-} 
+  	?team rdf:type dbo:SoccerClub .
+  	?team dct:subject dbc:Football_clubs_in_Italy .
+  	?stadium rdf:type dbo:Stadium .
+  	?team dbo:ground ?stadium .
+  	OPTIONAL
+  	{?team dbo:capacity ?capacity}
+}
