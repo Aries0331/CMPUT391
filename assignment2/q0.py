@@ -1,7 +1,3 @@
-'''
-Author: Zhaorui Chen (Oct 6th 2016)
-'''
-
 
 #!/usr/bin/python
 
