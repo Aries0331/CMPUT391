@@ -16,4 +16,17 @@ SELECT ?city (?ratio as ?rat) WHERE {
 	}.
     bind (?population/?cnt AS ?ratio)
 }
-ORDER BY DESC(?rat)
+ORDER BY DESC(?rat)  
+
+ANS：
+SELECT ?city ?population (xsd:double(?population)/xsd:double(COUNT(?hospital)) as ?rate)
+WHERE {
+  {{?hospital dbo:region ?city}
+    UNION
+    {?hospital dbo:location ?city }
+  }
+
+  ?hospital rdf:type schema:Hospital .
+  ?city dbo:populationTotal ?population .
+  ?city dbo:isPartOf dbr:Alberta
+} ORDER BY desc(3)
