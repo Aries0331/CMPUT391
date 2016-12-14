@@ -9,4 +9,20 @@ SELECT * WHERE {
   ?city dbo:country dbr:Canada.
   ?airport dbo:city ?city.
   FILTER (regex( ?airport,"International") ) .
+}   
+
+
+
+ANS:   
+
+SELECT * WHERE {
+    ?city rdf:type schema:City .
+?city dbo:country dbr:Canada .
+?airport rdf:type schema:Airport .
+?airport dbp:name ?name FILTER (regex(?name, "International")) .
+  {
+    {?airport dbo:city ?city} 
+    UNION
+    {?airport dbo:location ?city}
+  }
 } 
